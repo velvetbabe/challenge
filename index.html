@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Challenge</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <a name="home"></a>
+      <a href="#" id="logo">Logo</a>
+      <nav id="menu">
+        <a href="#" class="nav-mobile" id="nav-mobile"></a>
+        <ul>
+          <li><a href="#home">Challenge 1</a></li>
+          <li><a href="#me">Challenge 2</a></li>
+          <li><a href="#skill">Challenge 3</a></li>
+          <li><a href="#git">Challenge 4</a></li>
+        </ul>
+      </nav>
+      <div class="absolute">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="name">Office Manager Challenge
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <a name="me"></a>
+      <div class="row">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="acerca">Challenge 1-Video Conference
+            </h1>
+            <p class="intro">
+              Considerando que ya se cuenta con una TV,esta estaria situada en medio de la sala de Conferencias, permitiendo dejar un espacio para las sillas de los asistentes,que iran al medio,para que la videoconferencia con los clientes y el equipo de Able que se encuentra fuera de lima sea factible se realizá haciendo uso de Skype.Primero la persona encargada de la conferencia brindara unas palabras de bienvenida a los asistentes.El monitor al ser smart,se podra dividir en dos pantallas en donde tanto,clientes y personal de Able podrán entablar la comunicacion. Dicha conferencia tendra un cofee break de 15 minutos donde se repartirá a los asistentes bocaditos salados y dulces,y una copa de pisco sour,mientras se da el break ,podrá tambien servir como un meet and greet entre clientes y los trabajadores de Able donde podrán resolver sus dudas y consultas,al finalizar,la persona a cargo de la conferencia dará unas palabras de cierre.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <a name="skill"></a>
+      <h1 class="sk">Challenge 2-Tech Event</h1>
+       <p class="dos">La invitación será posteada vía Facebook para que llegue a todos los seguidores del fanpage,luego sería enviada tambien a la lista de clientes de Able,en Facebook habría un sorteo entre las diez primeras personas que compartan el el muro de diez amigos,se sortearía merchandising de Able(tazas,cuadernos,polos),tambie se compartiria en otras RRSS como Twitter,instagram,y via whastapp (solo para los clientes de los cuales tengamos ese tipo de informacion de contacto en la base de datos y se veria de la sgte.manera</p>
+       <img class="tech"src="images/tech challengue imagen.jpg"/>
+    </section>
+    <section class="work">
+      <a name="git"></a>
+      <h1 class="check">Challenge 3-Activities</h1>
+      <p class="tres">A)Almuerzo Campestre:
+        En donde podrán los que son padres llevar a su familia para pasar un buen momento. Se usará el dinero del presupuesto para comprar un almuerzo por familia,que incluirá:entrada,almuerzo,bebidas y postre.Posteriormente se realizarán competencias entre las familias de cada área y se premiará a la familia ganadora con una canasta llena de merchandising de Able y productos para el hogar,dicha canaste se realizara con el dinero restante del presupuesto</p>
+      <p class="tres">B)Almuerzo en un Restaurante:
+        El nombre del restaurante se sorteara entre todas las áreas,los trabajadores asistentes podrán elegir entre un menú marino o criollo,dicho buffet será cubierto por el presupuesto que cada uno aportará</p>
+      <p class="tres">C)Partida de Paintball:
+        En cada área se formarán equipos,cada participante podrá elegir un miembro de su familia con el cual asistir,su participacion como la del trabajador sera cubierta por el presupuesto,dicha actividad promoverá el contacto entre compañeros de trabajo y sus familias,el ganador de la partida se llevará una canasta de Merchandising de Able,tambien cubierta con el dinero restante del presupuesto</p>
+    </section>
+    <section class="mail">
+      <h1 class="mailtext">
+        Challenge 4-Email Announcement
+      </h1>
+      <p class="cuatro">Good Morning,My name is Antonella Gutiérrez I'm a freelance graphic designer and also have knowledge of web programing.As you know I'm gonna be working with you as an Office Manager.I'm really looking forward to start and to learn from this new experience.I'll be on charge of the planning & making of the events of the office as well of the social network events.I consider myself a risk taker,so it would be no problem for me to accept any new responsability as a challenge for learning new things.
+        I'm really excited about working with you as a team,when we can support each others ideas and learn from each other.I'm young,but i learn fast so if you need anything you now you can count on me.
+        Sincerily.
+        Antonella Gutierrez</p>
+    </section>
+    <h1 class="thnks">Gracias!</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+    var btn_movil = $('#nav-mobile'),
+    menu = $('#menu').find('ul');
+    // Al dar click agregar/quitar clases que permiten el despliegue del menú
+    btn_movil.on('click', function (e) {
+    e.preventDefault();
+    var el = $(this);
+    el.toggleClass('nav-active');
+    menu.toggleClass('open-menu');
+    })
+    });
+    </script>
+  </body>
+</html>
